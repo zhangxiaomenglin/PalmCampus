@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/version_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="版本信息"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="44dp"
+        android:text="型号：" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="MX4" />
+    
+     <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="15dp"
+        android:text="版本号：" />
+
+    <TextView
+        android:id="@+id/tv_versioncode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_version"
+        android:layout_alignBottom="@+id/tv_version"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="1.0" />
+    
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="#f00"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:text="下载进度" />
+
+    <Button
+        android:id="@+id/btn_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_version"
+        android:layout_marginTop="78dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:visibility="gone"
+        android:text="下载更新" />
+
+    <TextView
+        android:id="@+id/tv_de_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_version"
+        android:layout_below="@+id/tv_version"
+        android:layout_marginTop="41dp"
+        android:visibility="gone"
+        android:text="有更新请点击按钮：" />
+
+</RelativeLayout>

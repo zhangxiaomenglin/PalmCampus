@@ -1,0 +1,13 @@
+package com.zxm.palmcampus.base;
+
+import android.view.View;
+
+public class TabDetailPager extends BaseMenuDetailPager {
+
+	@Override
+	public View initViews() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

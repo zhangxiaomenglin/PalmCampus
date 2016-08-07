@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=PalmCampus/C:\/Users\/netmwd\/workspace\/PalmCampus\/PalmCampus\/libs\/android-support-v4.jar&lt;android.support.v4.view(ViewPager.class[ViewPager" modifiers="33" timestamp="1468212113763"/>
+<typeInfo handle="=PalmCampus/src&lt;com.zxm.palmcampus.fragment{BaseFragment.java[BaseFragment" modifiers="1025" timestamp="1468311284768"/>
+<typeInfo handle="=PalmCampus/src&lt;com.zxm.palmcampus.base{BasePager.java[BasePager" modifiers="1" timestamp="1468744535550"/>
+<typeInfo handle="=PalmCampus/D:\/Users\/xiaomeng\/AppData\/Local\/Android\/sdk\/platforms\/android-17\/android.jar&lt;android.widget(RelativeLayout.class[RelativeLayout" modifiers="33" timestamp="1459266262728"/>
+<typeInfo handle="=PalmCampus/libs\/android-support-v4.jar&lt;android.support.v4.app(Fragment.class[Fragment" modifiers="33" timestamp="1468212113763"/>
+<typeInfo handle="=PalmCampus/C:\/Users\/netmwd\/workspace\/PalmCampus\/PalmCampus\/libs\/android-support-v4.jar&lt;android.support.v4.app(FragmentPagerAdapter.class[FragmentPagerAdapter" modifiers="1057" timestamp="1468212113763"/>
+<typeInfo handle="=PalmCampus/D:\/Users\/xiaomeng\/AppData\/Local\/Android\/sdk\/platforms\/android-17\/android.jar&lt;android.app(Activity.class[Activity" modifiers="33" timestamp="1459266262728"/>
+<typeInfo handle="=PalmCampus/src&lt;com.zxm.palmcampus.base{BaseMenuDetailPager.java[BaseMenuDetailPager" modifiers="1025" timestamp="1469250425505"/>
+<typeInfo handle="=PalmCampus/D:\/Users\/xiaomeng\/AppData\/Local\/Android\/sdk\/platforms\/android-17\/android.jar&lt;android.widget(ListView.class[ListView" modifiers="33" timestamp="1459266262728"/>
+</typeInfoHistroy>

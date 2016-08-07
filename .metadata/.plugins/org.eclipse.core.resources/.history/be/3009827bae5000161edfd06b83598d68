@@ -1,0 +1,17 @@
+package com.zxm.palmcampus.base;
+
+import android.app.Activity;
+import android.view.View;
+
+public class TabDetailPager extends BaseMenuDetailPager {
+
+	public TabDetailPager(Activity activity, NewsTabData newsTabData) {
+		super(activity);
+	}
+
+	@Override
+	public View initViews() {
+		return null;
+	}
+
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zxm="http://schemas.android.com/apk/res/com.itheima.zhbj52"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_setting_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/head_img" />
+
+            <TextView
+                android:id="@+id/tv_setting_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_setting_img"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/iv_setting_img"
+                android:text="张小蒙"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="[登录]"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tv_setting_name"
+                android:layout_below="@+id/tv_setting_name"
+                android:text="【vip】"
+                android:textColor="#800080" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#c0c0c0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:text="收藏" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="#DCDCDC" />
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:text="二维码" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="#DCDCDC" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:text="皮肤" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#c0c0c0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.zxm.palmcampus.view.SettingClickView
+            android:id="@+id/scv_notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"/>
+
+        <com.zxm.palmcampus.view.SettingClickView
+            android:id="@+id/scv_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+        
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#c0c0c0" />
+        
+         <com.zxm.palmcampus.view.SettingClickView
+            android:id="@+id/scv_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    
+
+</LinearLayout>

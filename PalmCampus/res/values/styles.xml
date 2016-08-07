@@ -1,0 +1,45 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- 低栏RadioButton的样式 -->
+    <style name="BottomTabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@drawable/btn_tab_text_selector</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <!-- 由于我是个做程序的，不擅长美工，没有找到合适的图片，所以把第二页所有的按钮统一一下样式 -->
+    <style name="second_button_style">
+    	<item name="android:layout_margin">0.2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>    
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">#bbbbff</item>
+        
+    </style>
+
+</resources>

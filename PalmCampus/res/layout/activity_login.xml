@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/login_title"
+        android:textColor="#00f"
+        android:textSize="25sp" />
+    
+    <ImageView
+        android:id="@+id/ivOwner"
+        android:layout_width="123dp"
+        android:layout_height="30dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/bbxy" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/login_username"
+            android:textColor="#000080"
+            android:textSize="8pt" />
+
+        
+        <AutoCompleteTextView
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FFFFFF"
+            android:completionHint="请输入你的账号："
+            android:completionThreshold="1"
+            android:dropDownHorizontalOffset="10dp"
+            android:ems="10"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/login_password"
+            android:textColor="#000080"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FFFFFF"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="end"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cbrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10pt"
+            android:layout_marginRight="10pt"
+            android:text="@string/login_checkbox"
+            android:textColor="#000080"
+            android:textSize="6pt" >
+        </CheckBox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10pt"
+                android:layout_marginStart="10pt"
+                android:layout_weight="1"
+                android:text="@string/btn_login"
+                android:textSize="8pt" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginEnd="10pt"
+                android:layout_marginRight="10pt"
+                android:layout_weight="1"
+                android:text="@string/btn_regist"
+                android:textSize="8pt" >
+            </Button>
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="8dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:text="@string/login_introduce"
+            android:textColor="#00f"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

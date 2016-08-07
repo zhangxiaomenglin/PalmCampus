@@ -1,0 +1,117 @@
+package com.zxm.palmcampus.base.menudetail;
+
+import java.util.ArrayList;
+
+import android.app.Activity;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.event.OnClick;
+import com.viewpagerindicator.TabPageIndicator;
+import com.zxm.palmcampus.R;
+import com.zxm.palmcampus.base.BaseMenuDetailPager;
+import com.zxm.palmcampus.base.TabDetailPager;
+import com.zxm.palmcampus.domain.NewsData.NewsTabData;
+
+public class NewsMenuDetailPager extends BaseMenuDetailPager implements
+		OnPageChangeListener {
+
+	private ArrayList<NewsTabData> mNewsTabData;// 页签网络数据
+	private TabPageIndicator mIndicator;
+	private ViewPager mViewPager;
+	private ArrayList<TabDetailPager> mPagerList;
+
+	public NewsMenuDetailPager(Activity activity,
+			ArrayList<NewsTabData> children) {
+		super(activity);
+		mNewsTabData = children;
+	}
+
+	@Override
+	public View initViews() {
+		View view = View.inflate(mActivity, R.layout.news_menu_detail, null);
+		mViewPager = (ViewPager) view.findViewById(R.id.vp_menu_detail);
+
+		ViewUtils.inject(this, view);// 注入事件
+
+		mIndicator = (TabPageIndicator) view.findViewById(R.id.indicator);
+		mIndicator.setOnPageChangeListener(this);
+
+		return view;
+	}
+
+	@Override
+	public void initDate() {
+		mPagerList = new ArrayList<TabDetailPager>();
+
+		// 初始化页签数据
+		for (int i = 0; i < mNewsTabData.size(); i++) {
+			TabDetailPager pager = new TabDetailPager(mActivity,
+					mNewsTabData.get(i));
+			mPagerList.add(pager);
+		}
+		mViewPager.setAdapter(new MenuDetailAdapter());
+
+		mIndicator.setViewPager(mViewPager);
+
+	}
+
+	// 跳转下一个页面
+	@OnClick(R.id.btn_next)
+	public void nextPage(View view) {
+		int currentItem = mViewPager.getCurrentItem();// 拿到当前的位置
+		mViewPager.setCurrentItem(++currentItem);
+	}
+
+	class MenuDetailAdapter extends PagerAdapter {
+
+		@Override
+		public CharSequence getPageTitle(int position) {
+			return mNewsTabData.get(position).title;
+		}
+
+		@Override
+		public int getCount() {
+			return mPagerList.size();
+		}
+
+		@Override
+		public boolean isViewFromObject(View arg0, Object arg1) {
+			return arg0 == arg1;
+		}
+
+		@Override
+		public Object instantiateItem(ViewGroup container, int position) {
+			TabDetailPager pager = mPagerList.get(position);
+			container.addView(pager.mRootView);
+			pager.initDate();
+			return pager.mRootView;
+		}
+
+		@Override
+		public void destroyItem(ViewGroup container, int position, Object object) {
+			container.removeView((View) object);
+			
+		}
+	}
+
+	@Override
+	public void onPageScrollStateChanged(int arg0) {
+
+	}
+
+	@Override
+	public void onPageScrolled(int arg0, float arg1, int arg2) {
+
+	}
+
+	@Override
+	public void onPageSelected(int arg0) {
+
+	}
+
+}

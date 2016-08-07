@@ -1,0 +1,27 @@
+package com.zxm.palmcampus.base;
+
+import com.zxm.palmcampus.domain.NewsData.NewsTabData;
+
+import android.app.Activity;
+import android.view.View;
+import android.widget.TextView;
+
+public class TabDetailPager extends BaseMenuDetailPager {
+
+	NewsTabData mTabData;
+	
+	private String mUrl ;
+	
+	
+	public TabDetailPager(Activity activity, NewsTabData newsTabData) {
+		super(activity);
+		mTabData = newsTabData;
+		mUrl = GlobalContants.SERVER_URL + mTabData.url;
+	}
+
+	@Override
+	public View initViews() {
+		return null;
+	}
+
+}

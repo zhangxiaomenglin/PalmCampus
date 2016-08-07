@@ -1,0 +1,15 @@
+package com.zxm.palmcampus.base;
+
+import android.app.Activity;
+import android.view.View;
+
+public class BaseMenuDetailPager {
+	public Activity mActivity;
+	
+	public View mRootView;//根布局对象
+	
+	public BaseMenuDetailPager(Activity activity) {
+		mActivity = activity;
+	}
+
+}

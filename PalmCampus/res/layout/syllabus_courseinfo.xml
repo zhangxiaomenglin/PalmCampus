@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+		
+
+        <LinearLayout
+        	android:orientation="horizontal"
+        	android:gravity="center"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/bg_default"
+        	>
+        	<Button
+        		android:id="@+id/submit"
+        		android:text="提交"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:paddingLeft="10dip"
+        		android:paddingRight="10dip"
+        		/>
+        	<Button
+        		android:id="@+id/cancel"
+        		android:text="取消"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:paddingLeft="10dip"
+        		android:paddingRight="10dip"
+        		/>
+        	<Button
+        		android:id="@+id/delete"
+        		android:text="删除"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:paddingLeft="10dip"
+        		android:paddingRight="10dip"
+        		/>
+        </LinearLayout>
+
+        <ListView 
+        android:id="@+id/courseinfo" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        />
+  
+  </LinearLayout>
+

@@ -1,0 +1,5 @@
+package com.zxm.palmcampus.base;
+
+public class BaseMenuDetailPager {
+
+}

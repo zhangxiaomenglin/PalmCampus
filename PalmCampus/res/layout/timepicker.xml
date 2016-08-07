@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:id="@+id/scrollPicker"
+	  android:layout_width="fill_parent" 
+	  android:layout_height="wrap_content">
+<LinearLayout 
+	android:orientation="vertical"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:id="@+id/timepicker"
+	>
+		<LinearLayout
+	   		android:layout_width="fill_parent" 
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center"
+	    	>
+			<RadioGroup 
+		    	android:id="@+id/tp_period" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:orientation="horizontal">
+				<RadioButton 
+					android:text="单周" 
+					android:id="@+id/tp_single" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"/>
+				
+				<RadioButton 
+					android:text="双周" 
+					android:id="@+id/tp_couple" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"/>
+				<RadioButton 
+					android:text="单双周" 
+					android:id="@+id/tp_singleandcouple" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:checked="true"/>
+			</RadioGroup>
+		</LinearLayout>
+		
+		<TimePicker
+		    android:id="@+id/starttimepicker"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+	    	/>
+	    <TimePicker
+		    android:id="@+id/endtimepicker"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+	    	/>
+	    	
+	</LinearLayout>
+</ScrollView>

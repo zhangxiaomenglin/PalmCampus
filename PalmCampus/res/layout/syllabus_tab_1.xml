@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightwhite" >
+
+    <ScrollView
+        android:id="@+id/scrollPicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/timetable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="课程时间表"
+                android:textSize="16dp" />
+            <!-- 第一行：显示星期几 -->
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/week_class"
+                    style="@style/second_button_style"
+                    android:layout_height="match_parent"
+                    android:text="星期\n课次" />
+
+                <Button
+                    android:id="@+id/monday"
+                    style="@style/second_button_style"
+                    android:layout_height="match_parent"
+                    android:text="一" />
+
+                <Button
+                    android:id="@+id/tuesday"
+                    style="@style/second_button_style"
+                    android:layout_height="match_parent"
+                    android:text="二" />
+
+                <Button
+                    android:id="@+id/wednesday"
+                    style="@style/second_button_style"
+                    android:layout_height="match_parent"
+                    android:text="三" />
+
+                <Button
+                    android:id="@+id/thursday"
+                    style="@style/second_button_style"
+                    android:layout_height="match_parent"
+                    android:text="四" />
+
+                <Button
+                    android:id="@+id/friday"
+                    style="@style/second_button_style"
+                    android:layout_height="match_parent"
+                    android:text="五" />
+            </TableRow>
+
+            <!-- 第二行：显示空白让用户自己添加 -->
+
+            <TableRow android:gravity="center" >
+
+                <Button
+                    android:id="@+id/week1"
+                    style="@style/second_button_style"
+                    android:text="1-2" />
+
+                <Button
+                    android:id="@+id/monday1"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/tuesday1"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/wednesday1"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/thursday1"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/friday1"
+                    style="@style/second_button_style"
+                    android:text="" />
+            </TableRow>
+
+            <!-- 第三行：显示空白让用户自己添加 -->
+
+            <TableRow
+                android:layout_marginBottom="3dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/week2"
+                    style="@style/second_button_style"
+                    android:text="3-4" />
+
+                <Button
+                    android:id="@+id/monday2"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/tuesday2"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/wednesday2"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/thursday2"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/friday2"
+                    style="@style/second_button_style"
+                    android:text="" />
+            </TableRow>
+
+            <!-- 第四行：显示空白让用户自己添加 -->
+
+            <TableRow android:gravity="center" >
+
+                <Button
+                    android:id="@+id/week3"
+                    style="@style/second_button_style"
+                    android:text="5-6" />
+
+                <Button
+                    android:id="@+id/monday3"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/tuesday3"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/wednesday3"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/thursday3"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/friday3"
+                    style="@style/second_button_style"
+                    android:text="" />
+            </TableRow>
+
+            <!-- 第五行：显示空白让用户自己添加 -->
+
+            <TableRow
+                android:layout_marginBottom="3dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/week4"
+                    style="@style/second_button_style"
+                    android:text="7-8" />
+
+                <Button
+                    android:id="@+id/monday4"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/tuesday4"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/wednesday4"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/thursday4"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/friday4"
+                    style="@style/second_button_style"
+                    android:text="" />
+            </TableRow>
+
+            <!-- 第六行：显示空白让用户自己添加 -->
+
+            <TableRow android:gravity="center" >
+
+                <Button
+                    android:id="@+id/week5"
+                    style="@style/second_button_style"
+                    android:text="9-10" />
+
+                <Button
+                    android:id="@+id/monday5"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/tuesday5"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/wednesday5"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/thursday5"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/friday5"
+                    style="@style/second_button_style"
+                    android:text="" />
+            </TableRow>
+
+            <!-- 第七行：显示空白让用户自己添加 -->
+
+            <TableRow android:gravity="center" >
+
+                <Button
+                    android:id="@+id/week6"
+                    style="@style/second_button_style"
+                    android:text="11-12" />
+
+                <Button
+                    android:id="@+id/monday6"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/tuesday6"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/wednesday6"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/thursday6"
+                    style="@style/second_button_style"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/friday6"
+                    style="@style/second_button_style"
+                    android:text="" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

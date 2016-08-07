@@ -1,0 +1,15 @@
+package com.zxm.palmcampus.base.menudetail;
+
+import android.view.View;
+
+import com.zxm.palmcampus.base.BaseMenuDetailPager;
+
+public class PhotoMenuDetailPager extends BaseMenuDetailPager {
+
+	@Override
+	public View initViews() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

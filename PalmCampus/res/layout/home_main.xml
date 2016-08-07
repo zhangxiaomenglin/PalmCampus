@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/adv_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/viewGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adv_pager"
+        android:layout_marginTop="-25px"
+        android:gravity="right"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/zhuyeliebiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adv_pager"
+        android:background="@drawable/ic_beijing"
+        android:paddingTop="10dp" >
+
+        <ScrollView
+            android:id="@+id/sc_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!--
+                 <com.zxm.mobilesafe.view.FocusedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="用了张小蒙版智慧小蒙，腰不酸了，腿不疼了，太NB了"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:text="欢迎使用掌上校园，本软件开发者：蚌埠学院-13级软件工程班-张小蒙"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </ScrollView>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/sc_text"
+            android:layout_marginTop="15dp"
+            android:columnWidth="60dp"
+            android:gravity="center"
+            android:horizontalSpacing="0dp"
+            android:listSelector="@drawable/gridviewbackg"
+            android:numColumns="3"
+            android:paddingBottom="10dp"
+            android:stretchMode="spacingWidthUniform"
+            android:verticalSpacing="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

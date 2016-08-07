@@ -1,0 +1,23 @@
+package com.zxm.palmcampus.base.menudetail;
+
+import android.app.Activity;
+import android.view.View;
+import android.widget.ImageButton;
+
+import com.zxm.palmcampus.base.BaseMenuDetailPager;
+
+public class PhotoMenuDetailPager extends BaseMenuDetailPager {
+
+	public PhotoMenuDetailPager(Activity activity, ImageButton btnPhoto2) {
+		super(activity);
+		
+		
+		
+	}
+
+	@Override
+	public View initViews() {
+		return null;
+	}
+
+}

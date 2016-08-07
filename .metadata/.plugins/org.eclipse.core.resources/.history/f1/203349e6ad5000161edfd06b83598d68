@@ -1,0 +1,63 @@
+package com.zxm.palmcampus.base.menudetail;
+
+import java.util.ArrayList;
+
+import android.app.Activity;
+import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.view.View;
+
+import com.lidroid.xutils.ViewUtils;
+import com.viewpagerindicator.TabPageIndicator;
+import com.zxm.palmcampus.R;
+import com.zxm.palmcampus.base.BaseMenuDetailPager;
+import com.zxm.palmcampus.base.TabDetailPager;
+import com.zxm.palmcampus.domain.NewsData.NewsTabData;
+
+public class NewsMenuDetailPager extends BaseMenuDetailPager implements
+OnPageChangeListener{
+
+	private ArrayList<NewsTabData> mNewsTabData;//页签网络数据
+	private TabPageIndicator mIndicator;
+	private ViewPager mViewPager;
+
+	public NewsMenuDetailPager(Activity activity,ArrayList<NewsTabData> children) {
+		super(activity);
+		mNewsTabData = children;
+	}
+
+	@Override
+	public View initViews() {
+		View view = View.inflate(mActivity, R.layout.news_menu_detail, null); 
+		mViewPager = (ViewPager) view.findViewById(R.id.vp_menu_detail);
+		
+		ViewUtils.inject(this,view);//注入事件
+		
+		mIndicator = (TabPageIndicator) view.findViewById(R.id.indicator);
+		mIndicator.setOnPageChangeListener(this);
+		
+		return view;
+	}
+
+	@Override
+	public void initDate() {
+		ArrayList<TabDetailPager> mPagerList = new ArrayList<TabDetailPager>();
+		
+	}
+	
+	@Override
+	public void onPageScrollStateChanged(int arg0) {
+		
+	}
+
+	@Override
+	public void onPageScrolled(int arg0, float arg1, int arg2) {
+		
+	}
+
+	@Override
+	public void onPageSelected(int arg0) {
+		
+	}
+
+}

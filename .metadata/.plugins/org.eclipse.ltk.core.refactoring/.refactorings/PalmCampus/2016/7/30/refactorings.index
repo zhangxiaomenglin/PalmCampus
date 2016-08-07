@@ -1,0 +1,25 @@
+1468729936061	Convert local variable 'Home_ViewPager' to field
+1468730726733	Convert local variable 'view' to field
+1468730815703	Convert local variable 'group' to field
+1468738764018	Delete element
+1468738793863	Delete element
+1468738892023	Delete element
+1468743560405	Delete element
+1468744513102	Convert local variable 'relativity' to field
+1468815740550	Convert local variable 'mPager' to field
+1468815817167	Convert local variable 'fragmentsList' to field
+1468815991333	Move compilation unit
+1468816008093	Move compilation unit
+1468817237917	Convert local variable 'ivBottomLine' to field
+1468817305379	Convert local variable 'bottomLineWidth' to field
+1468939206324	Convert local variable 'base' to field
+1469019819610	Rename type 'CourseInfo'
+1469250502353	Convert local variable 'mPagers' to field
+1469251550734	Convert local variable 'mNewsTabData' to field
+1469252449619	Convert local variable 'mIndicator' to field
+1469261555409	Convert local variable 'mViewPager' to field
+1469261944247	Convert local variable 'mPagerList' to field
+1469264440921	Convert local variable 'mHeaderView' to field
+1469265290993	Convert local variable 'mFooterView' to field
+1469265384841	Convert local variable 'mFooterViewHeight' to field
+1469266151135	Convert local variable 'startY' to field

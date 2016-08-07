@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:id="@+id/dialog">
+	<LinearLayout
+	   			android:layout_width="fill_parent" 
+	    		android:layout_height="wrap_content"
+	    		android:orientation="horizontal"
+	    		>
+
+	    
+		<TextView  
+			android:text="课程名称："
+    		android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+   			/>
+   		<EditText 
+   				android:id="@+id/dialog_coursename"
+   				android:hint="点击“确定”会自动填信息"
+   				android:layout_width="fill_parent" 
+	    		android:layout_height="wrap_content" />
+	    </LinearLayout>
+	    <LinearLayout
+	   			android:layout_width="fill_parent" 
+	    		android:layout_height="wrap_content"
+	    		android:orientation="horizontal"
+	    		>
+		<TextView  
+			android:text="上课地点："
+    		android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content"
+   			/>
+   		<EditText 
+   				android:id="@+id/dialog_address"
+   				android:layout_width="fill_parent" 
+	    		android:layout_height="wrap_content" />
+	    </LinearLayout>
+		<LinearLayout
+	   			android:layout_width="fill_parent" 
+	    		android:layout_height="wrap_content"
+	    		 android:gravity="center"
+	    		>
+	    <RadioGroup 
+	    	android:id="@+id/dialog_period" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:orientation="horizontal">
+			<RadioButton 
+				android:text="单周" 
+				android:id="@+id/single" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+			<RadioButton 
+				android:text="双周" 
+				android:id="@+id/couple" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+			<RadioButton 
+				android:text="单双周" 
+				android:id="@+id/singleandcouple" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:checked="true"/>
+		</RadioGroup>
+		
+	    </LinearLayout>
+	   
+	       
+</LinearLayout>
+
